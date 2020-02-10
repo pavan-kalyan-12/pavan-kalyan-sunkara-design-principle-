@@ -1,21 +1,16 @@
 package com.pavan.calculator;
-
-/**
- * Hello world!
- *
- */
 import java.util.*;
 public class App 
 {
     public static void main( String[] args )
     {
-    	Scanner in = new Scanner(System.in);
+    	Scanner scan = new Scanner(System.in);
         System.out.println("Enter the first operand:");
-        float first = in.nextFloat();
+        float first = scan.nextFloat();
         System.out.println("Enter the Second operand:");
-        float second = in.nextFloat();
+        float second = scan.nextFloat();
         System.out.println("Enter the operation you wish to do:");
-        String operand = in.next();
+        String operand = scan.next();
         if(operand.equals("+")){
             Addition add = new Addition(first, second);
             System.out.println(add.addtwonumbers(first, second));
