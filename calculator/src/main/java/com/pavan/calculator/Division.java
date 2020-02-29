@@ -9,6 +9,6 @@ public class Division {
         this.second = second;
     }
     public float dividetwonumbers(float a, float b){
-        return a + b;
+        return a / b;
     }
 }
